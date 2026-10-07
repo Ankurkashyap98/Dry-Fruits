@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Nutoria Heritage — Rooted in Craft. Refined by Passion.</title>
+  <meta name="description" content="Discover Nutoria's 25-year journey from Himalayan orchards to royal tables worldwide. Sourcing map, master curators, and sustainable values.">
+  <link rel="canonical" href="https://nutoria.in/about/">
+
+  <!-- Page Stylesheets (Root-Relative & Fallbacks) -->
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/loader.css">
+  <link rel="stylesheet" href="/css/navbar.css">
+  <link rel="stylesheet" href="/css/footer.css">
+  <link rel="stylesheet" href="/css/cart.css">
+  <link rel="stylesheet" href="/css/about.css">
+  <script>
+    (function(){
+      var path = window.location.pathname;
+      if (path.indexOf('/about') > 0) {
+        var baseDir = path.substring(0, path.indexOf('/about'));
+        document.querySelectorAll('link[rel="stylesheet"]').forEach(function(l){
+          var href = l.getAttribute('href');
+          if (href && href.startsWith('/css/')) {
+            var fallback = document.createElement('link');
+            fallback.rel = 'stylesheet';
+            fallback.href = baseDir + href;
+            document.head.appendChild(fallback);
+          }
+        });
+      }
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- 1. Signature Splash Loader -->
+  <div id="global-loader" aria-hidden="true">
+    <div class="loader-inner">
+      <div class="loader-crest">
+        <svg viewBox="0 0 100 100">
+          <defs>
+            <linearGradient id="loaderGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FAF7F2"/>
+              <stop offset="50%" stop-color="#D9AC51"/>
+              <stop offset="100%" stop-color="#B88E38"/>
+            </linearGradient>
+          </defs>
+          <polygon points="50,5 90,25 90,75 50,95 10,75 10,25" />
+          <circle cx="50" cy="50" r="22" stroke="url(#loaderGoldGrad)" />
+          <path d="M50 30 L50 70 M30 50 L70 50" stroke="url(#loaderGoldGrad)" />
+        </svg>
+      </div>
+      <div class="loader-logo">NUTORIA</div>
+      <div class="loader-tagline">Nature's Finest • Perfectly Crafted</div>
+      <div class="loader-progress-track">
+        <div class="loader-progress-bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Master Glassmorphic Header -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+      <a href="/" class="brand-logo" aria-label="Nutoria Home">
+        <div class="brand-crest">
+          <svg viewBox="0 0 100 100">
+            <polygon points="50,5 90,25 90,75 50,95 10,75 10,25" />
+            <circle cx="50" cy="50" r="20" fill="none" stroke="currentColor" stroke-width="4" />
+          </svg>
+        </div>
+        <span class="brand-name">NUTORIA</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="/" class="nav-link">Home</a>
+        <a href="/products/" class="nav-link">Products</a>
+        <a href="/about/" class="nav-link active">About</a>
+        <a href="/contact/" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="cart-toggle-btn" aria-label="Open Shopping Bag">
+          <svg viewBox="0 0 24 24">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="cart-badge">0</span>
+        </button>
+
+        <button type="button" class="menu-toggle-btn" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-backdrop"></div>
+  <div class="mobile-nav-drawer" role="dialog" aria-modal="true">
+    <div class="mobile-nav-links">
+      <a href="/" class="mobile-nav-link">Home <span>01</span></a>
+      <a href="/products/" class="mobile-nav-link">Products <span>02</span></a>
+      <a href="/about/" class="mobile-nav-link active">About <span>03</span></a>
+      <a href="/contact/" class="mobile-nav-link">Contact <span>04</span></a>
+    </div>
+    <div class="mobile-nav-footer">
+      <div class="mobile-nav-contact">
+        Direct Concierge Line:
+        <a href="tel:+919820012345">+91 98200 12345</a>
+        <a href="mailto:concierge@nutoria.in">concierge@nutoria.in</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- PAGE 3 — STORYTELLING HERO -->
+    <section class="about-hero" aria-label="Our Story">
+      <div class="container">
+        <div class="about-hero-grid">
+          <div class="about-hero-text">
+            <div class="eyebrow-pill">OUR STORY</div>
+            <h1 class="about-hero-title">
+              Rooted in Craft.<br>
+              <span class="gold-text">Refined by Passion.</span>
+            </h1>
+            <p class="about-hero-para">
+              Nutoria was founded on a singular conviction: that the natural dry fruits bestowed upon humanity by ancient soils are culinary gems of the highest order, requiring zero artificial intervention and total respect for harvest cycles.
+            </p>
+            <p class="about-hero-para">
+              From our origins in Kashmir’s high-altitude walnut groves to our deep grower partnerships spanning Rafsanjan, Malatya, and the Jordan Valley, every harvest represents twenty-five years of unrelenting devotion to perfection.
+            </p>
+            <div class="about-hero-cta">
+              <a href="/products/" class="btn btn-primary">
+                Explore The Collection →
+              </a>
+            </div>
+          </div>
+
+          <div class="about-hero-frame-wrap">
+            <div class="about-hero-frame">
+              <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=85" 
+                   alt="Nutoria Generational Orchard Sourcing" 
+                   class="about-hero-img" 
+                   width="520" 
+                   height="480">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOURNEY TIMELINE -->
+    <section class="timeline-section" aria-label="Brand Timeline">
+      <div class="container">
+        <div class="section-header reveal revealed">
+          <div class="eyebrow-pill">The Odyssey</div>
+          <h2 class="section-title">A Quarter Century of Dedication</h2>
+          <p class="section-desc">Key moments that built India's most respected dry-fruits atelier.</p>
+        </div>
+
+        <div class="timeline-track">
+          <!-- 1998 -->
+          <div class="timeline-block reveal revealed">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content-card">
+              <div class="timeline-year">1998</div>
+              <h3 class="timeline-title">The First Himalayan Harvest</h3>
+              <p class="timeline-desc">
+                Our founders began by personally hand-selecting wild kagzi walnuts in Shopian, Kashmir, introducing cold nitrogen sealed batches to select families in Mumbai.
+              </p>
+              <img src="https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?auto=format&fit=crop&w=800&q=85" alt="1998 First Harvest" class="timeline-thumb" loading="lazy">
+            </div>
+          </div>
+
+          <!-- 2005 -->
+          <div class="timeline-block reveal revealed">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content-card">
+              <div class="timeline-year">2005</div>
+              <h3 class="timeline-title">The Nutoria Atelier is Born</h3>
+              <p class="timeline-desc">
+                Formalizing the brand as Nutoria, establishing our signature caliber grading system where only nuts in the top 3rd percentile are certified for royal packaging.
+              </p>
+              <img src="https://images.unsplash.com/photo-1589923188900-85dae523342b?auto=format&fit=crop&w=800&q=85" alt="2005 Brand Genesis" class="timeline-thumb" loading="lazy">
+            </div>
+          </div>
+
+          <!-- 2015 -->
+          <div class="timeline-block reveal revealed">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content-card">
+              <div class="timeline-year">2015</div>
+              <h3 class="timeline-title">D2C Farm-to-Connoisseur Launch</h3>
+              <p class="timeline-desc">
+                Eliminating distributors and intermediaries entirely to deliver fresh harvest directly within 48 hours of optical sorting and vacuum nitrogen sealing.
+              </p>
+              <img src="https://images.unsplash.com/photo-1607344645866-009c320c5ab8?auto=format&fit=crop&w=800&q=85" alt="2015 D2C Launch" class="timeline-thumb" loading="lazy">
+            </div>
+          </div>
+
+          <!-- 2020 -->
+          <div class="timeline-block reveal revealed">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content-card">
+              <div class="timeline-year">2020</div>
+              <h3 class="timeline-title">10,000 Private Collectors</h3>
+              <p class="timeline-desc">
+                Crossed 10,000 active members in our private allocation circle, expanding our direct sourcing network into the sacred Ajwa palms of Al Madinah.
+              </p>
+              <img src="https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?auto=format&fit=crop&w=800&q=85" alt="2020 10000 Customers" class="timeline-thumb" loading="lazy">
+            </div>
+          </div>
+
+          <!-- 2024 -->
+          <div class="timeline-block reveal revealed">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content-card">
+              <div class="timeline-year">2024</div>
+              <h3 class="timeline-title">Launch of Imperial Versailles Reserve</h3>
+              <p class="timeline-desc">
+                Unveiled our ultra-luxury bespoke gifting trunks, pairing Cartier-inspired teakwood & gold finishes with colossal King W180 cashews and Iranian Mamra almonds.
+              </p>
+              <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=800&q=85" alt="2024 Premium Range" class="timeline-thumb" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 CORE VALUES -->
+    <section class="values-section" aria-label="Our Values">
+      <div class="container">
+        <div class="section-header reveal revealed">
+          <div class="eyebrow-pill">Our Philosophy</div>
+          <h2 class="section-title">Values Cast in Stone</h2>
+          <p class="section-desc">Guiding principles that steer every single procurement decision we make.</p>
+        </div>
+
+        <div class="values-grid">
+          <div class="value-card reveal revealed">
+            <div class="value-icon">01</div>
+            <h3>Authenticity</h3>
+            <p>Every nut can be traced back to its specific valley of origin. We never blend harvests or mask origins with generic labels.</p>
+          </div>
+
+          <div class="value-card reveal revealed">
+            <div class="value-icon">02</div>
+            <h3>Zero Compromise Purity</h3>
+            <p>No sulphur dioxide, no chemical preservatives, no paraffin waxes. Just 100% pure sunshine, soil nutrients, and clean nitrogen seal.</p>
+          </div>
+
+          <div class="value-card reveal revealed">
+            <div class="value-icon">03</div>
+            <h3>Sustainable Soils</h3>
+            <p>We work exclusively with multigenerational farms that practice natural soil replenishment, clean water conservation, and regenerative farming.</p>
+          </div>
+
+          <div class="value-card reveal revealed">
+            <div class="value-icon">04</div>
+            <h3>Michelin-Grade Craft</h3>
+            <p>From precision hand-calibrated sizing to artisanal cold-smoke batches, our treatments honor the ingredient like fine haute gastronomy.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE GLOBAL SOURCING MAP -->
+    <section class="sourcing-section" aria-label="Global Sourcing Terroirs">
+      <div class="container">
+        <div class="section-header reveal revealed">
+          <div class="eyebrow-pill dark">Global Terroir</div>
+          <h2 class="section-title">The Origins of Greatness</h2>
+          <p class="section-desc">Hover over our single-estate provenance points to explore each terroir.</p>
+        </div>
+
+        <div class="sourcing-map-wrap reveal revealed">
+          <svg class="sourcing-svg-canvas" viewBox="0 0 1000 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M120 100 Q180 80 260 120 T360 220 Q320 300 240 320 T150 240 Z" fill="rgba(255,255,255,0.04)" stroke="rgba(184,142,56,0.2)" stroke-width="1"/>
+            <path d="M420 80 Q560 60 700 90 T850 160 Q820 280 720 340 T540 320 Q480 240 440 160 Z" fill="rgba(255,255,255,0.05)" stroke="rgba(184,142,56,0.2)" stroke-width="1"/>
+            <path d="M600 260 Q660 280 720 360 T660 440 Q620 400 580 320 Z" fill="rgba(255,255,255,0.04)" stroke="rgba(184,142,56,0.2)" stroke-width="1"/>
+
+            <g class="map-pin" data-region="Kashmir" transform="translate(685, 175)">
+              <circle class="pulse-ring" cx="0" cy="0" r="10" stroke="#D9AC51" stroke-width="1.5" fill="none"/>
+              <circle cx="0" cy="0" r="5" fill="#D9AC51"/>
+              <text x="12" y="4" fill="#FAF7F2" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700">Kashmir (Walnuts & Saffron)</text>
+            </g>
+
+            <g class="map-pin" data-region="Iran" transform="translate(615, 170)">
+              <circle class="pulse-ring" cx="0" cy="0" r="10" stroke="#B88E38" stroke-width="1.5" fill="none"/>
+              <circle cx="0" cy="0" r="5" fill="#B88E38"/>
+              <text x="12" y="-6" fill="#FAF7F2" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700">Iran (Mamra Almonds & Akbari)</text>
+            </g>
+
+            <g class="map-pin" data-region="Turkey" transform="translate(545, 150)">
+              <circle class="pulse-ring" cx="0" cy="0" r="10" stroke="#109F75" stroke-width="1.5" fill="none"/>
+              <circle cx="0" cy="0" r="5" fill="#109F75"/>
+              <text x="-160" y="-8" fill="#FAF7F2" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700">Turkey (Aegean Figs & Malatya)</text>
+            </g>
+
+            <g class="map-pin" data-region="California" transform="translate(195, 160)">
+              <circle class="pulse-ring" cx="0" cy="0" r="10" stroke="#D87D20" stroke-width="1.5" fill="none"/>
+              <circle cx="0" cy="0" r="5" fill="#D87D20"/>
+              <text x="12" y="4" fill="#FAF7F2" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700">California (Nonpareil Almonds)</text>
+            </g>
+
+            <g class="map-pin" data-region="MiddleEast" transform="translate(580, 205)">
+              <circle class="pulse-ring" cx="0" cy="0" r="10" stroke="#DDA38A" stroke-width="1.5" fill="none"/>
+              <circle cx="0" cy="0" r="5" fill="#DDA38A"/>
+              <text x="12" y="16" fill="#FAF7F2" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700">Madinah & Jordan (Ajwa & Medjool)</text>
+            </g>
+          </svg>
+
+          <div class="sourcing-callouts-grid">
+            <div class="sourcing-card" data-region="Kashmir">
+              <div class="sourcing-card-flag">🏔️</div>
+              <div class="sourcing-card-region">Kashmir Valley</div>
+              <div class="sourcing-card-product">Glacial Snow Walnuts & Mogra Saffron</div>
+            </div>
+
+            <div class="sourcing-card" data-region="Iran">
+              <div class="sourcing-card-flag">🏺</div>
+              <div class="sourcing-card-region">Rafsanjan, Iran</div>
+              <div class="sourcing-card-product">High-Oil Mamra & Akbari Pistachios</div>
+            </div>
+
+            <div class="sourcing-card" data-region="Turkey">
+              <div class="sourcing-card-flag">☀️</div>
+              <div class="sourcing-card-region">Malatya, Turkey</div>
+              <div class="sourcing-card-product">Sun-Dried Figs & Jumbo Khubani</div>
+            </div>
+
+            <div class="sourcing-card" data-region="California">
+              <div class="sourcing-card-flag">🌊</div>
+              <div class="sourcing-card-region">Central Valley, USA</div>
+              <div class="sourcing-card-product">Supreme Nonpareil Almond Kernels</div>
+            </div>
+
+            <div class="sourcing-card" data-region="MiddleEast">
+              <div class="sourcing-card-flag">🌴</div>
+              <div class="sourcing-card-region">Madinah & Jordan</div>
+              <div class="sourcing-card-product">Sacred Ajwa & Royal Medjool Dates</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOUNDERS & MASTER CURATORS -->
+    <section class="curators-section" aria-label="Founders & Curators">
+      <div class="container">
+        <div class="section-header reveal revealed">
+          <div class="eyebrow-pill">The Guardians</div>
+          <h2 class="section-title">Master Curators & Founders</h2>
+          <p class="section-desc">The lifelong connoisseurs who inspect each harvest lot with uncompromising standards.</p>
+        </div>
+
+        <div class="curators-grid">
+          <div class="curator-card reveal revealed">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=85" alt="Harshavardhan Singhal" class="curator-img" loading="lazy">
+            <div class="curator-body">
+              <span class="curator-role">Founder & Chief Terroir Officer</span>
+              <h3 class="curator-name">Harshavardhan Singhal</h3>
+              <p class="curator-bio">
+                Having spent 28 years traversing mountain orchards across the Silk Route, Harshavardhan personally tests kernel moisture, oil profiles, and soil chemistry before greenlighting any lot.
+              </p>
+            </div>
+          </div>
+
+          <div class="curator-card reveal revealed">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=85" alt="Meera Singhal" class="curator-img" loading="lazy">
+            <div class="curator-body">
+              <span class="curator-role">Co-Founder & Head of Preservation</span>
+              <h3 class="curator-name">Meera Singhal</h3>
+              <p class="curator-bio">
+                A food technologist specializing in oxygen-free inert gas preservation, Meera engineered Nutoria's proprietary zero-degradation nitrogen sealing chambers in Mumbai.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUALITY CERTIFICATIONS -->
+    <section class="cert-section" aria-label="Certifications">
+      <div class="container">
+        <div class="cert-grid reveal revealed">
+          <div class="cert-item">
+            <div class="cert-badge-icon">✓</div>
+            <span>FSSAI Central Certified</span>
+          </div>
+          <div class="cert-item">
+            <div class="cert-badge-icon">✓</div>
+            <span>ISO 22000 Food Safety</span>
+          </div>
+          <div class="cert-item">
+            <div class="cert-badge-icon">✓</div>
+            <span>100% Organically Grown</span>
+          </div>
+          <div class="cert-item">
+            <div class="cert-badge-icon">✓</div>
+            <span>Zero Preservative Seal</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ORCHARD & HARVEST GALLERY STRIP -->
+    <section class="gallery-section" aria-label="Orchard Gallery">
+      <div class="container">
+        <div class="gallery-strip reveal revealed">
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=800&q=85" alt="Iranian Pistachio Groves" class="gallery-img" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=85" alt="Aegean Valley Fig Harvest" class="gallery-img" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?auto=format&fit=crop&w=800&q=85" alt="California Almond Bloom" class="gallery-img" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1589923188900-85dae523342b?auto=format&fit=crop&w=800&q=85" alt="Artisan Caliber Inspection" class="gallery-img" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MASTER FOOTER -->
+  <footer class="site-footer" id="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <svg class="footer-crest" viewBox="0 0 100 100">
+              <polygon points="50,5 90,25 90,75 50,95 10,75 10,25" />
+              <circle cx="50" cy="50" r="20" fill="none" stroke="currentColor" stroke-width="4" />
+            </svg>
+            <div class="footer-title">NUTORIA</div>
+          </div>
+          <p class="footer-tagline">
+            Nature's finest dry fruits, handpicked from the world's most pristine soils. Cartier elegance meets culinary perfection.
+          </p>
+          <div class="footer-socials">
+            <a href="https://instagram.com" class="social-link" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://linkedin.com" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="https://whatsapp.com" class="social-link" target="_blank" rel="noopener" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Collections</h4>
+          <ul class="footer-links">
+            <li class="footer-link-item"><a href="/products/">Imperial Almonds</a></li>
+            <li class="footer-link-item"><a href="/products/">King W180 Cashews</a></li>
+            <li class="footer-link-item"><a href="/products/">Persian Pistachios</a></li>
+            <li class="footer-link-item"><a href="/products/">Kashmiri Walnuts</a></li>
+            <li class="footer-link-item"><a href="/products/">Medjool & Ajwa Dates</a></li>
+            <li class="footer-link-item"><a href="/products/">Royal Gift Hampers</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">The Heritage</h4>
+          <ul class="footer-links">
+            <li class="footer-link-item"><a href="/about/">Our Philosophy</a></li>
+            <li class="footer-link-item"><a href="/about/">The 1998 Journey</a></li>
+            <li class="footer-link-item"><a href="/about/">Glacial Sourcing Map</a></li>
+            <li class="footer-link-item"><a href="/about/">Nitrogen Preservation</a></li>
+            <li class="footer-link-item"><a href="/about/">Master Curators</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Concierge</h4>
+          <ul class="footer-links">
+            <li class="footer-link-item"><a href="/contact/">Bespoke Gifting</a></li>
+            <li class="footer-link-item"><a href="/contact/">Corporate Orders</a></li>
+            <li class="footer-link-item"><a href="/contact/">Express Pan-India Track</a></li>
+            <li class="footer-link-item"><a href="/contact/">Flagship House</a></li>
+            <li class="footer-link-item"><a href="/contact/">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Harvest Gazette</h4>
+          <p class="footer-newsletter-text">Subscribe for private allocations of scarce seasonal lots.</p>
+          <form class="newsletter-form">
+            <div class="newsletter-input-wrap">
+              <input type="email" class="newsletter-input" placeholder="Your email address" required>
+            </div>
+            <button type="submit" class="newsletter-btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copy">
+          © 2026 NUTORIA Gourmet Reserve. All rights reserved.
+        </div>
+        <div class="footer-badges">
+          <div class="footer-badge-item"><span>✦</span> FSSAI Certified</div>
+          <div class="footer-badge-item"><span>✦</span> ISO 22000</div>
+          <div class="footer-badge-item"><span>✦</span> 100% Organic Origin</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="/js/data.js"></script>
+  <script>if(!window.NUTORIA_PRODUCTS) document.write('<script src="../js/data.js"><\/script>');</script>
+
+  <script src="/js/core.js"></script>
+  <script>if(!window.showToast) document.write('<script src="../js/core.js"><\/script>');</script>
+
+  <script src="/js/cart.js"></script>
+  <script>if(!window.NutoriaCart) document.write('<script src="../js/cart.js"><\/script>');</script>
+
+  <script src="/js/about.js"></script>
+  <script>if(!window.NUTORIA_IMAGE_MAP) document.write('<script src="../js/about.js"><\/script>');</script>
+</body>
+</html>

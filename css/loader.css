@@ -1,0 +1,111 @@
+/* ==========================================================================
+   NUTORIA — GLOBAL LUXURY LOADER
+   Signature Gold Wordmark on Deep Imperial Green with Fluid Progress Bar
+   ========================================================================== */
+
+#global-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  background: radial-gradient(circle at center, #0F3422 0%, #061A10 70%, #020C07 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.65s ease;
+  pointer-events: auto;
+}
+
+#global-loader.loaded {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.loader-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  max-width: 440px;
+}
+
+.loader-crest {
+  width: 58px;
+  height: 58px;
+  margin-bottom: 1.5rem;
+  animation: crestPulse 2.4s ease-in-out infinite;
+}
+
+.loader-crest svg {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: url(#loaderGoldGrad);
+  stroke-width: 1.5;
+}
+
+.loader-logo {
+  font-family: var(--font-serif);
+  font-size: clamp(2.4rem, 6vw, 3.4rem);
+  font-weight: 800;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, #FAF7F2 0%, #F5E8C7 45%, #D9AC51 80%, #A37926 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.5rem;
+  position: relative;
+  text-shadow: 0 0 30px rgba(217, 172, 81, 0.3);
+}
+
+.loader-tagline {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: #D1DED6;
+  margin-bottom: 2.5rem;
+  opacity: 0.85;
+}
+
+.loader-progress-track {
+  width: 220px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-full);
+  position: relative;
+  overflow: hidden;
+}
+
+.loader-progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #B88E38, #F7EED8, #D9AC51);
+  box-shadow: 0 0 12px rgba(217, 172, 81, 0.8);
+  border-radius: var(--radius-full);
+  animation: loaderProgress 1.7s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+}
+
+@keyframes loaderProgress {
+  0% { width: 0%; }
+  40% { width: 45%; }
+  75% { width: 85%; }
+  100% { width: 100%; }
+}
+
+@keyframes crestPulse {
+  0%, 100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 8px rgba(184, 142, 56, 0.4));
+  }
+  50% {
+    transform: scale(1.06);
+    filter: drop-shadow(0 0 16px rgba(217, 172, 81, 0.8));
+  }
+}

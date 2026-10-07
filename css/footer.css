@@ -1,0 +1,257 @@
+/* ==========================================================================
+   NUTORIA — MASTER FOOTER STYLES
+   Imperial Deep Forest Green with Gold Filigree, 4 Columns & Newsletter
+   ========================================================================== */
+
+.site-footer {
+  background: radial-gradient(circle at 50% 0%, #113622 0%, #071F13 60%, #030E08 100%);
+  color: var(--text-inverse);
+  position: relative;
+  overflow: hidden;
+  padding-top: 5.5rem;
+  padding-bottom: 2.5rem;
+  border-top: 1px solid var(--border-gold-strong);
+}
+
+.site-footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 1px;
+  background: radial-gradient(circle, #D9AC51 0%, transparent 80%);
+  box-shadow: 0 0 15px #D9AC51;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3.5rem;
+  margin-bottom: 4.5rem;
+}
+
+@media (min-width: 768px) {
+  .footer-top {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer-top {
+    grid-template-columns: 1.6fr 1fr 1fr 1fr 1.4fr;
+  }
+}
+
+/* Brand Column */
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.footer-crest {
+  width: 32px;
+  height: 32px;
+  fill: var(--gold-light);
+}
+
+.footer-title {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.footer-title span {
+  color: var(--gold-light);
+}
+
+.footer-tagline {
+  font-size: 0.95rem;
+  color: #D1DED6;
+  line-height: 1.65;
+  margin-bottom: 1.75rem;
+  max-width: 320px;
+}
+
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(184, 142, 56, 0.3);
+  color: #F7EED8;
+  transition: all var(--transition-smooth);
+}
+
+.social-link svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.social-link:hover {
+  background: var(--gold);
+  color: #0A2417;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(184, 142, 56, 0.4);
+}
+
+/* Navigation Columns */
+.footer-col-title {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #FFFFFF;
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.footer-col-title::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 24px;
+  height: 1.5px;
+  background: var(--gold);
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.footer-link-item a {
+  font-size: 0.92rem;
+  color: #D1DED6;
+  transition: all var(--transition-fast);
+  display: inline-block;
+}
+
+.footer-link-item a:hover {
+  color: var(--gold-light);
+  transform: translateX(4px);
+}
+
+/* Newsletter Column */
+.footer-newsletter-text {
+  font-size: 0.92rem;
+  color: #D1DED6;
+  margin-bottom: 1.25rem;
+  line-height: 1.6;
+}
+
+.newsletter-form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.newsletter-input-wrap {
+  position: relative;
+  width: 100%;
+}
+
+.newsletter-input {
+  width: 100%;
+  padding: 0.85rem 1.25rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(184, 142, 56, 0.35);
+  border-radius: var(--radius-full);
+  color: #FFFFFF;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color var(--transition-fast), background var(--transition-fast);
+}
+
+.newsletter-input::placeholder {
+  color: rgba(209, 222, 214, 0.6);
+}
+
+.newsletter-input:focus {
+  border-color: var(--gold-light);
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0 12px rgba(217, 172, 81, 0.25);
+}
+
+.newsletter-btn {
+  padding: 0.85rem 1.5rem;
+  border-radius: var(--radius-full);
+  background: linear-gradient(135deg, #B88E38, #D9AC51);
+  color: #0A2417;
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  transition: all var(--transition-smooth);
+}
+
+.newsletter-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(184, 142, 56, 0.4);
+}
+
+/* Footer Bottom Bar */
+.footer-bottom {
+  padding-top: 2.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .footer-bottom {
+    flex-direction: row;
+    text-align: left;
+  }
+}
+
+.footer-copy {
+  font-size: 0.86rem;
+  color: #92A69A;
+}
+
+.footer-badges {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 0.82rem;
+  color: #92A69A;
+}
+
+.footer-badge-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.footer-badge-item span {
+  color: var(--gold-light);
+}
